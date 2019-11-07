@@ -1,0 +1,28 @@
+package org.cts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UtilityClas {
+	static WebDriver driver;
+	public static void LaunchBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\eclipse-workspace\\maven.Project\\driver\\chromedriver.exe");
+		driver= new ChromeDriver();
+	
+	}
+	
+	public static void LaunchUrl(String url)
+	{
+		driver.get(url);
+		
+	}
+
+	public static void input(WebElement e,String s)
+	{
+		e.sendKeys(s);
+		
+	}
+	
+}

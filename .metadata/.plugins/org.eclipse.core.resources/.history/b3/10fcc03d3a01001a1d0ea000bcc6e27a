@@ -1,0 +1,12 @@
+package org.cts;
+
+public class MainClass extends UtilityClas {
+public static void main(String[] args) {
+	LaunchBrowser();
+	LaunchUrl("www.gmail.com");
+	//driver.findElement(By.)
+	
+	
+	
+}
+}

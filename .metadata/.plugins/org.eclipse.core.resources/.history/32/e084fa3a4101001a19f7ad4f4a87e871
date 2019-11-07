@@ -1,0 +1,20 @@
+package utilityClass;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class MainClass extends UtilityClass {
+	public static void main(String[] args) {
+		LaunchBrowser();
+		LaunchUrl("www.facebook.com");
+		WebElement e = driver.findElement(By.id("email"));
+		Input(e,"Lidiya");
+		WebElement p = driver.findElement(By.id("pass"));
+		Pass(p,"212345");
+		WebElement clik = driver.findElement(By.id("loginbutton"));
+		btnclck(clik);
+		System.out.println("over");
+		qut();
+	}
+
+}

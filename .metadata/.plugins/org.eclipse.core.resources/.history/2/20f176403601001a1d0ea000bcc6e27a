@@ -1,0 +1,13 @@
+package org.cts;
+
+public class UtilityClass {
+	public  void LaunchBrowser()
+	{
+		System.setProperty(webdriver.chrome.driver, "")
+	}
+	
+	
+	
+	}
+
+
